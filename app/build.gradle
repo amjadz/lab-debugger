@@ -3,7 +3,6 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "25.0.0"
     defaultConfig {
         applicationId "edu.info448.calculator"
         minSdkVersion 15
@@ -18,6 +17,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    buildToolsVersion = '28.0.2'
 }
 
 dependencies {
