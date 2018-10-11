@@ -47,10 +47,10 @@ class MainActivity : Activity() {
         }
 
         val mulButton = findViewById(R.id.operation_mul_btn) as Button
-        mulButton.setOnClickListener { compute(Calculator.Operator.MUL) }
+        mulButton.setOnClickListener { compute(Calculator.Operator.MUL) }g
 
         val resetButton = findViewById(R.id.reset_btn) as Button
-        resetButton.setOnClickListener { mResultTextView!!.setText(R.string.initial_result_text) }
+        resetButton.setOnClickListener { mResultTextView!!.setText(mCalculator!!.setValue(0.0).toString())}
     }
 
 
