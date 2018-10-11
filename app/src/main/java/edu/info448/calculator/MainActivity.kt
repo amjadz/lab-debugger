@@ -39,7 +39,7 @@ class MainActivity : Activity() {
         val divButton = findViewById(R.id.operation_div_btn) as Button
         divButton.setOnClickListener {
             try {
-                compute(Calculator.Operator.MUL)
+                compute(Calculator.Operator.DIV)
             } catch (iae: IllegalArgumentException) {
                 Log.e(TAG, "IllegalArgumentException", iae)
                 mResultTextView!!.text = getString(R.string.computationError)
